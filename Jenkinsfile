@@ -14,7 +14,7 @@ pipeline {
                 echo 'Compiling and running Parallel Browser Testing'
                 bat '''
                     cd src
-                    javac test\\java\\com\\cineplex\\ThreadedBrowserLauncher.java
+                    javac test\\java\\com\\cineplex\\utils\\ThreadedBrowserLauncher.java
                     java com.cineplex.ThreadedBrowserLauncher
                 '''
             }
