@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: Movie Experience
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 108.9 s <<< FAILURE! -- in Movie Experience
+Movie Experience.User views basic movie details #1 -- Time elapsed: 31.67 s <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //img[@alt='Relay'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.128, chrome: {chromedriverVersion: 140.0.7339.82 (bc93617e21c3..., userDataDir: C:\Users\CONSUL~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63612}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63612/devtoo..., se:cdpVersion: 140.0.7339.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f5672834f1d99b15908db5ca060a5c5
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.cineplex.actions.MoviePageActions.selectMovieFromSearchResults(MoviePageActions.java:65)
+	at com.cineplex.stepdefinitions.MovieSteps.user_selects_movie_from_search_results(MovieSteps.java:41)
+	at ✽.User selects the movie "Relay" from the search results(file:///C:/Users/Consultant/Downloads/selenium_project_feature_parallel/selenium_project_feature_parallel/src/test/resources/features/Movie.feature:6)
+

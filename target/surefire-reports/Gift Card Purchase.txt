@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: Gift Card Purchase
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 119.5 s <<< FAILURE! -- in Gift Card Purchase
+Gift Card Purchase.User tries to enter a gift card value exceeding the maximum allowed -- Time elapsed: 47.58 s <<< FAILURE!
+org.junit.ComparisonFailure: expected:<[20]0> but was:<[1]0>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.cineplex.actions.GiftCardPageActions.verifyCardValueAdjustment(GiftCardPageActions.java:342)
+	at com.cineplex.stepdefinitions.GiftCardSteps.the_gift_card_value_field_should_automatically_adjust(GiftCardSteps.java:94)
+	at ✽.the gift card value field should automatically adjust to the maximum allowed "200"(file:///C:/Users/Consultant/Downloads/selenium_project_feature_parallel/selenium_project_feature_parallel/src/test/resources/features/GiftCard.feature:25)
+

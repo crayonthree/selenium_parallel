@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: com.cineplex.runners.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 109.8 s <<< FAILURE! -- in com.cineplex.runners.TestRunner
+Gift Card Purchase.User tries to enter a gift card value exceeding the maximum allowed -- Time elapsed: 11.78 s <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=139.0.7258.129)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [43b0507dce6b715162a9aee1c009e041, sendKeysToElement {id=f.9DEECB4C35737C8FE1D5C8BBDDBD1D1C.d.018B222C0588116AFA8EA7CF275DA751.e.57, value=[Ljava.lang.CharSequence;@71adfedd}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.129, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\abhiy\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49302}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49302/devtoo..., se:cdpVersion: 139.0.7258.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (43b0507dce6b715162a9aee1c009e041)] -> xpath: //input[@name='card_value' and @type='number']]
+Session ID: 43b0507dce6b715162a9aee1c009e041
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at com.cineplex.actions.GiftCardPageActions.enterCardValue(GiftCardPageActions.java:149)
+	at com.cineplex.stepdefinitions.GiftCardSteps.user_enters_card_value(GiftCardSteps.java:59)
+	at ✽.User enters "250" as the card value(file:///F:/Trial/selenium_project/src/test/resources/features/GiftCard.feature:23)
+
+Gift Card Purchase.User tries to enter a gift card quantity exceeding the maximum allowed -- Time elapsed: 11.02 s <<< ERROR!
+org.openqa.selenium.ElementNotInteractableException: 
+element not interactable
+  (Session info: chrome=139.0.7258.129)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [43b0507dce6b715162a9aee1c009e041, sendKeysToElement {id=f.AA524EF24F8DCD6B9D2D50D61C23FB5A.d.215C0CAC93551A143331897B8AA4E3FE.e.93, value=[Ljava.lang.CharSequence;@24c8d8be}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.129, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\abhiy\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49302}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49302/devtoo..., se:cdpVersion: 139.0.7258.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (43b0507dce6b715162a9aee1c009e041)] -> xpath: //input[@name='card_value' and @type='number']]
+Session ID: 43b0507dce6b715162a9aee1c009e041
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at com.cineplex.actions.GiftCardPageActions.enterCardValue(GiftCardPageActions.java:149)
+	at com.cineplex.stepdefinitions.GiftCardSteps.user_enters_card_value(GiftCardSteps.java:59)
+	at ✽.User enters "90" as the card value(file:///F:/Trial/selenium_project/src/test/resources/features/GiftCard.feature:33)
+

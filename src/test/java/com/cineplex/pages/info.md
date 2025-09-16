@@ -1,0 +1,1 @@
+For Page Object Model classes
