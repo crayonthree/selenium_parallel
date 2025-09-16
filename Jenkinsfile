@@ -12,10 +12,10 @@ pipeline {
         stage('Compile and Run Java File') {
             steps {
                 echo 'Compiling and running Parallel Browser Testing'
-                sh '''
+                bat '''
                     cd src
-                    javac test/java/com/cineplex/ThreadedBrowserLauncher.java
-                    java ThreadedBrowserLauncher
+                    javac test\\java\\com\\cineplex\\ThreadedBrowserLauncher.java
+                    java com.cineplex.ThreadedBrowserLauncher
                 '''
             }
         }
